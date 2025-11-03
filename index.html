@@ -45,7 +45,17 @@
         <li>辨識與討論當代爭議中可能涉及的憲政危機徵候。</li>
         <li>說明初選制度差異與身份政治對極化與治理的影響。</li>
       </ul>
-      <p class="small text-muted">說明：內容以課前文本〈美國二：憲政特色〉、課堂簡報與文本（Kettl, <em>Is the US in a Constitutional Crisis?</em>）為教學依據。</p>
+    </section>
+
+    <!-- 同學提問 -->
+    <section class="mb-5">
+      <h3 class="h5">同學提問</h3>
+      <ul>
+        <li>作者未坐實川普是否造成憲政危機這一論點，並把「是否違抗法院」視為危機的臨界線之一，但在臨界線未跨越前，若行政持續擴張灰色地帶、讓國會與法院失去實質權力，即使形式上未違法，會不會就已經造成事實上的憲政危機了?</li>
+        <li>如果法院能透過透明之制度、判決一致性提升等方式主動挽回民意，危機是否仍如作者所警告般嚴重？</li>
+        <li>先前看過美劇紙牌屋，如果把劇中劇情帶入現實世界，共和黨內部不可能對於川普本身的爭議不聞不問，那麼他們是否也在等待一個絕佳的機會去彈劾川普呢？那這樣是解除一個憲政危機，但卻創造一個新的政治危機呢？換作是范斯，他會做得更好嗎？</li>
+        <li>文本中作者指出國會失能削弱制衡，但是否也反映了社會結構與選民分化，或者是社會上意見過於分岐，而非單純制度上的問題？</li>
+      </ul>
     </section>
 
     <!-- 一、憲政制度設計 -->
@@ -256,7 +266,7 @@
       const container = document.getElementById('discussion-thread');
       container.innerHTML = "";
       const items = JSON.parse(localStorage.getItem(KEY_DISCUSS) || "[]");
-      items.forEach((t, idx) => {
+      items.forEach((t) => {
         const p = document.createElement('div');
         p.className = "border-start ps-2 mb-2";
         p.innerHTML = "<strong>💬 學生意見</strong>：" + t;
